@@ -55,6 +55,10 @@ public class MyCircularQueue {
         }
     }
 
+    public int getSize() {
+        return size;
+    }
+
     private boolean isEmpty(){
         return size==0;
     }
