@@ -27,5 +27,7 @@ public class MyMain {
         MyQueue<TreeNode> q = new MyQueue(t);
 
         q.addAllPreOrderSuccessor();
+
+        q.printQueue();
     }
 }
