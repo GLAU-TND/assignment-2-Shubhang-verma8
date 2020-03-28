@@ -70,6 +70,40 @@ public class MyBinarySearchTree {
         if(current.getRightChild() != null){
             rightQ.add(current.getRightChild());
         }
+        if(leftQ.isEmpty() || rightQ.isEmpty()){
+            counter++;
+        }
+        while(!leftQ.isEmpty() || !rightQ.isEmpty()){
+            TreeNode remove_form_leftQ = null;
+            TreeNode remove_from_rightQ = null;
+            if (!leftQ.isEmpty()) {
+                remove_form_leftQ = leftQ.remove();
+
+                if (remove_form_leftQ.getLeftChild() != null) {
+                    leftQ.add(remove_form_leftQ.getLeftChild());
+                } else {
+                    counter++;
+                }
+                if (remove_form_leftQ.getRightChild() != null) {
+                    rightQ.add(remove_form_leftQ.getRightChild());
+                }
+                System.out.println(remove_form_leftQ);
+            }
+
+            if(!rightQ.isEmpty()) {
+                remove_from_rightQ = rightQ.remove();
+                //System.out.println(remove_from_rightQ);
+
+                if (remove_from_rightQ.getLeftChild() != null) {
+                    leftQ.add(remove_from_rightQ.getLeftChild());
+                } else {
+                    counter++;
+                }
+                if (remove_from_rightQ.getRightChild() != null) {
+                    rightQ.add(remove_from_rightQ.getRightChild());
+                }
+            }
+        }
     }
 
     public TreeNode getRoot(){
