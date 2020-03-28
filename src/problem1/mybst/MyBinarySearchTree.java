@@ -8,6 +8,9 @@ package problem1.mybst;
 // to implement BinarySearchTree
 import problem1.node.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 
 public class MyBinarySearchTree {
     private TreeNode root;
@@ -56,6 +59,16 @@ public class MyBinarySearchTree {
         if(isEmpty()){
             System.out.println("Tree is empty");
             return;
+        }
+        int counter = 0;       //counter for those Nodes who doesn't have left child.
+        TreeNode current = root;
+        Queue<TreeNode> leftQ = new LinkedList();
+        Queue<TreeNode> rightQ = new LinkedList();
+        if(current.getLeftChild() != null){
+            leftQ.add(current.getLeftChild());
+        }
+        if(current.getRightChild() != null){
+            rightQ.add(current.getRightChild());
         }
     }
 
