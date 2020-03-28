@@ -150,7 +150,23 @@ public class MyBinarySearchTree {
             //System.out.println("Tree is Empty");
             return null;
         }
-        //return search(root,value);
+        return search(root,value);
+    }
+
+    private TreeNode search(TreeNode current,int value){
+        if(current.getData() ==  value){
+            return current;
+        }
+        else if (value < current.getData()){
+            if(current.getLeftChild() != null){
+                return search(current.getLeftChild(),value);
+            }
+        }
+        else {
+            if(current.getRightChild() != null){
+                return search(current.getRightChild(),value);
+            }
+        }
         return null;
     }
 
