@@ -17,5 +17,7 @@ public class MyMain {
         Student mikeWilson = new Student("Mike", "Wilson", 4);
 
         Student billEnd = new Student("Bill","End",5);
+
+        MyPriorityQueue<Student> queue = new MyPriorityQueue();
     }
 }
