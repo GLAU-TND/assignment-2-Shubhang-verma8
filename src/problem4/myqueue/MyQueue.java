@@ -14,7 +14,7 @@ import problem4.element.Element;
 import java.util.LinkedList;
 import java.util.List;
 
-public class MyQueue {
+public class MyQueue<T> {
     private Element front;
     private Element back;
     private MyBinarySearchTree tree;
