@@ -35,6 +35,20 @@ public class MyCircularQueue {
         }
     }
 
+    public Student deQueue(){
+        Student response=null;
+        if(!isEmpty()){
+            size--;
+            response= circularQueue[front];
+            front=(front+1)%maxSize;
+            return response;
+
+        }
+        else{
+            return response;
+        }
+    }
+
     private boolean isEmpty(){
         return size==0;
     }
