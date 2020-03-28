@@ -41,4 +41,10 @@ public class Student {
     public void setAppearingCount(int appearingCount) {
         this.appearingCount = appearingCount;
     }
+
+    @Override
+    public String toString(){
+        return getName()+" "+getBackLog()+" "+getAppearingCount();
+    }
+
 }
