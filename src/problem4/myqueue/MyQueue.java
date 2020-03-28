@@ -11,5 +11,7 @@ import problem1.node.TreeNode;
 import problem4.element.Element;
 
 public class MyQueue {
-    //private Element
+    private Element front;
+    private Element back;
+    private MyBinarySearchTree tree;
 }
