@@ -41,7 +41,11 @@ public class MyPriorityQueue<T> {
     }
 
     public void printQueue(){
-
+        Node current = front;
+        while(current != null){
+            System.out.println(current);
+            current = current.getNext();
+        }
     }
 
 
