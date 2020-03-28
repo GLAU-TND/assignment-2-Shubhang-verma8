@@ -20,8 +20,10 @@ public class MyMain {
         tree.insert(34);
         tree.insert(40);
 
+        System.out.println("pre Order Traversal");
         tree.preOrderTraversal();
 
+        System.out.println("\n\npost Order Traversal");
         tree.postOrderTraversal();
 
     }
