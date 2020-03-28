@@ -19,5 +19,11 @@ public class MyMain {
         Student billEnd = new Student("Bill","End",5);
 
         MyPriorityQueue<Student> queue = new MyPriorityQueue();
+
+        queue.enQueue(janeJones, janeJones.getRoll());
+        queue.enQueue(johnDoe, johnDoe.getRoll());
+        queue.enQueue(marySmith, marySmith.getRoll());
+        queue.enQueue(mikeWilson, mikeWilson.getRoll());
+        queue.enQueue(billEnd, billEnd.getRoll());
     }
 }
