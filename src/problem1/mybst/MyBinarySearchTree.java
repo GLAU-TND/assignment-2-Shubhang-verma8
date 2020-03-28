@@ -140,6 +140,9 @@ public class MyBinarySearchTree {
         if(current.getLeftChild() != null){
             preOrderTraversal(current.getLeftChild());
         }
+        if(current.getRightChild() != null){
+            preOrderTraversal(current.getRightChild());
+        }
     }
 
     public TreeNode getRoot(){
