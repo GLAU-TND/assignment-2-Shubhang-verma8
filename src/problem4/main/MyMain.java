@@ -25,5 +25,7 @@ public class MyMain {
         t.preOrderTraversal();
 
         MyQueue<TreeNode> q = new MyQueue(t);
+
+        q.addAllPreOrderSuccessor();
     }
 }
