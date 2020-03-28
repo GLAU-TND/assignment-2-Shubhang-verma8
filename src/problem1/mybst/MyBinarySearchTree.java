@@ -131,7 +131,14 @@ public class MyBinarySearchTree {
             System.out.println("tree is empty");
         }
         else {
-            //preOrderTraversal(root);
+            preOrderTraversal(root);
+        }
+    }
+
+    private void preOrderTraversal(TreeNode current){
+        System.out.println("data = "+current.getData());
+        if(current.getLeftChild() != null){
+            preOrderTraversal(current.getLeftChild());
         }
     }
 
