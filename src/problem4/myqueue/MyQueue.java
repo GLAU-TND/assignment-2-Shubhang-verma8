@@ -8,7 +8,8 @@ package problem4.myqueue;
 // to create queue to store pre - order successor
 import problem1.mybst.MyBinarySearchTree;
 import problem1.node.TreeNode;
+import problem4.element.Element;
 
 public class MyQueue {
-
+    //private Element
 }
