@@ -23,4 +23,8 @@ public class MyCircularQueue {
         this.rear=0;
         this.size=0;
     }
+
+    public void enQueue(Student element){
+
+    }
 }
