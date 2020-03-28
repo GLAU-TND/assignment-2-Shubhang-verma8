@@ -40,6 +40,10 @@ public class MyPriorityQueue<T> {
         return (T)removeNode.getData();
     }
 
+    public void printQueue(){
+
+    }
+
 
     public boolean isEmpty(){
         return front == null;
