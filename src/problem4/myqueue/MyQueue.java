@@ -30,6 +30,10 @@ public class MyQueue {
         }
     }
 
+    public void addAllPreOrderSuccessor(){
+
+    }
+
     public boolean isEmpty(){
         return front == null;
     }
