@@ -38,6 +38,19 @@ public class MyQueue {
         TreeNode current = tree.getRoot();
         List l = new LinkedList();
         l.add(current);
+        while (!l.isEmpty()){
+            try{
+                TreeNode remove = (TreeNode)l.remove(0);
+                if(remove != null){
+                    TreeNode preOrder = tree.preOrderSuccessor(remove.getData());
+                    Element ele = new Element(remove,preOrder);
+                    this.add(ele);
+                }
+                l.add(remove.getLeftChild());
+                l.add(remove.getRightChild());
+            }
+            catch (Exception e){}
+        }
     }
 
     public boolean isEmpty(){
