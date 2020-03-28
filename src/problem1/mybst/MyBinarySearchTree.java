@@ -145,6 +145,15 @@ public class MyBinarySearchTree {
         }
     }
 
+    public TreeNode search(int value){
+        if(isEmpty()){
+            //System.out.println("Tree is Empty");
+            return null;
+        }
+        //return search(root,value);
+        return null;
+    }
+
     public TreeNode getRoot(){
         return root;
     }
