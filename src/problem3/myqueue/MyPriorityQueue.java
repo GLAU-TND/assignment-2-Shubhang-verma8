@@ -17,6 +17,16 @@ public class MyPriorityQueue {
             node.setNext(front);
             front = node;
         }
+        else {
+            Node previous = null;
+            Node current = front;
+            while(current != null && current.getPriority() <=  node.getPriority()){
+                previous = current;
+                current = current.getNext();
+            }
+            node.setNext(previous.getNext());
+            previous.setNext(node);
+        }
     }
 
     public boolean isEmpty(){
