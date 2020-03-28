@@ -51,4 +51,19 @@ public class MyBinarySearchTree {
         }
         return;
     }
+
+    public void ourTraversal(){
+        if(isEmpty()){
+            System.out.println("Tree is empty");
+            return;
+        }
+    }
+
+    public TreeNode getRoot(){
+        return root;
+    }
+
+    public boolean isEmpty(){
+        return root == null;
+    }
 }
