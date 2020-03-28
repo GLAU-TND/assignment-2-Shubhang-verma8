@@ -20,5 +20,9 @@ public class MyMain {
         tree.insert(34);
         tree.insert(40);
 
+        tree.preOrderTraversal();
+
+        tree.postOrderTraversal();
+
     }
 }
