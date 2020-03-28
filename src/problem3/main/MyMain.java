@@ -28,5 +28,10 @@ public class MyMain {
 
         System.out.println("List of Student");
         queue.printQueue();
+
+        Student remove = queue.deQueue();
+        System.out.println("remove student "+remove);
+        System.out.println("List after removal");
+        queue.printQueue();
     }
 }
