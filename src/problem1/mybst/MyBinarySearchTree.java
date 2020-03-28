@@ -120,6 +120,10 @@ public class MyBinarySearchTree {
         if(current.getLeftChild() != null){
             postOrderTraversal(current.getLeftChild());
         }
+        if(current.getRightChild() != null){
+            postOrderTraversal(current.getRightChild());
+        }
+        System.out.println("data = "+current.getData());
     }
 
     public TreeNode getRoot(){
