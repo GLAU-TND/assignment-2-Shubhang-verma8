@@ -12,6 +12,15 @@ public class MyPriorityQueue {
     private Node back;
 
     public <T>void enQueue(T data,int priority){
-
+        Node node = new Node(data,priority);
+        if(isEmpty() || node.getPriority() < front.getPriority()){
+            node.setNext(front);
+            front = node;
+        }
     }
+
+    public boolean isEmpty(){
+        return front == null;
+    }
+
 }
