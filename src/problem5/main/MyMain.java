@@ -23,6 +23,6 @@ public class MyMain {
                 myCircularQueue.enQueue(s);
             }
         }
-
+        myCircularQueue.show();
     }
 }
