@@ -25,5 +25,8 @@ public class MyMain {
         queue.enQueue(marySmith, marySmith.getRoll());
         queue.enQueue(mikeWilson, mikeWilson.getRoll());
         queue.enQueue(billEnd, billEnd.getRoll());
+
+        System.out.println("List of Student");
+        queue.printQueue();
     }
 }
