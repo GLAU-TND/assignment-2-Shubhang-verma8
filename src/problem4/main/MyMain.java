@@ -17,5 +17,8 @@ public class MyMain {
         t.insert(3);
         t.insert(30);
         t.insert(15);
+
+        System.out.println("PreOrder Traversal");
+        t.preOrderTraversal();
     }
 }
