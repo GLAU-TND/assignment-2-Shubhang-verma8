@@ -53,6 +53,10 @@ public class MyQueue {
         }
     }
 
+    public void printQueue(){
+
+    }
+
     public boolean isEmpty(){
         return front == null;
     }
